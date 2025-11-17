@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8BC9D1"
-    tools:context=".MainActivity">
+    android:background="@color/white">
 
+    <!-- Center Image -->
+    <ImageView
+        android:id="@+id/splash_logo"
+        android:layout_width="321dp"
+        android:layout_height="477dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/img" />
+
+    <!-- Bottom Text -->
     <TextView
+        android:id="@+id/splash_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="welcome to rest API"
-        android:textSize="32sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:text="Powered by Me"
+        android:textSize="16sp"
+        android:textColor="#777" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
