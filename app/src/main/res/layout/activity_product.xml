@@ -4,18 +4,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="15dp"
+    android:background="@color/black"
     android:layout_height="match_parent"
     tools:context=".ProductActivity">
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/productRV"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        tools:listitem="@layout/product_list"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/product_list" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/refreshBtn"
